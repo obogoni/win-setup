@@ -1,0 +1,26 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "remote.SSH.remotePlatform": {
+        "raspberrypi": "linux"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "[xml]": {
+        "editor.autoClosingBrackets": "never",
+        "files.trimFinalNewlines": true
+    },
+    "xml.symbols.maxItemsComputed": 10000,
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "zig.initialSetupDone": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}
