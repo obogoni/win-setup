@@ -1,1 +1,1 @@
-Simple scripts and config files to setup a development environment on Windows. 
+Simple scripts and config files that may be useful to setup a development environment on Windows
