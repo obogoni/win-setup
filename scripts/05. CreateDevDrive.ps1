@@ -1,7 +1,8 @@
+$ErrorActionPreference = "Stop"
+
 # Define the path and drive letter for the Dev Drive
 $devDrivePath = "C:\DevDrives\Default.vhdx"
 $fixedDriveLetter = 'E'  # Specify the desired drive letter
-$nugetPath = "${fixedDriveLetter}:\.nuget"
 
 # Create the directory for the VHDX file if it doesn't exist
 New-Item -ItemType Directory -Path "C:\DevDrives" -Force
@@ -25,11 +26,3 @@ $partition = New-Partition -DiskNumber $disk.Number -UseMaximumSize -DriveLetter
 Format-Volume -DriveLetter $fixedDriveLetter -DevDrive -FileSystem ReFS -NewFileSystemLabel "DevDrive"
 
 Write-Output "Dev Drive created and initialized with drive letter: $fixedDriveLetter"
-
-# Creates the nuget folder
-New-Item -Path $nuGetPath -ItemType Directory
-
-# Sets global nuget path variable
-[System.Environment]::SetEnvironmentVariable('NUGET_PACKAGES', $newNuGetPath, [System.EnvironmentVariableTarget]::User)
-
-echo $env:NUGET_PACKAGES

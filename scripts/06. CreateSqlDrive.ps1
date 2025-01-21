@@ -1,3 +1,5 @@
+$ErrorActionPreference = "Stop"
+
 # Define variables
 $vhdPath = "C:\HDVirtual\SQLServer.vhd"
 $vhdSize = 30GB
@@ -16,7 +18,7 @@ Mount-VHD -Path $vhdPath
 $disk = Get-Disk | Where-Object { $_.PartitionStyle -eq 'RAW' }
 
 # Initialize the disk with MBR
-Initialize-Disk -DiskNumber $disk.Number -PartitionStyle MBR
+Initialize-Disk -Number $disk.Number -PartitionStyle MBR
 
 # Create a partition on the disk and assign the drive letter
 New-Partition -DiskNumber $disk.Number -UseMaximumSize -AssignDriveLetter -DriveLetter $driveLetter

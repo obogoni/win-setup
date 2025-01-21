@@ -12,4 +12,4 @@
 ### 05. CreateDevDrive.ps1
 - Creates a virtual drive as a Dev Drive for development
 ### 06. CreateSqlDrive.ps1
-- Creates a virtual drive to install SQL Server instances
+- Creates a virtual drive to install SQL Server instances (still under work)
