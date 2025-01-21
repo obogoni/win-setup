@@ -1,3 +1,7 @@
+### How to run
+
+To run the scripts, open PowerShell inside the scripts folder with admin privileges. 
+
 ### 01. SetBasicWindowsSettings.ps1
 - Enable Hyper-V and Container features
 - Show hidden files
