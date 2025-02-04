@@ -11,3 +11,4 @@ winget install --id Clockify.Clockify -h
 winget install --id Notion.Notion -h
 winget install StayFree --accept-package-agreements -h
 winget install --id 7zip.7zip -h
+winget install --id=SmartBear.SoapUI -h
